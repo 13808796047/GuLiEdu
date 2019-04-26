@@ -17,6 +17,7 @@ import sys
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # 把apps包加入python搜寻环境变量中
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -41,6 +42,8 @@ INSTALLED_APPS = [
     'courses',
     'orgs',
     'operations',
+    'xadmin',
+    'crispy_forms',  # 注意crispy_forms之间是下划线隔开，不是横线
 ]
 
 AUTH_USER_MODEL = 'users.UserProfile'
