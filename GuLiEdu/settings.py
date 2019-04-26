@@ -39,9 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
-    'courses',
-    'orgs',
-    'operations',
+    'courses.apps.CoursesConfig',
+    'orgs.apps.OrgsConfig',
+    'operations.apps.OperationsConfig',
     'xadmin',
     'crispy_forms',  # 注意crispy_forms之间是下划线隔开，不是横线
 ]
