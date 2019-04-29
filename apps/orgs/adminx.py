@@ -4,10 +4,12 @@ from .models import City, Org, Teacher
 
 class CityXadmin(object):
     list_display = ['name', 'created_time']
+    model_icon = 'fa fa-bath'
 
 
 class OrgXadmin(object):
     list_display = ['name', 'image', 'course_num', 'study_num', 'fav_num', 'versit_num', 'category', 'city']
+    model_icon = 'fa fa-gift'
 
 
 class TeacherXadmin(object):

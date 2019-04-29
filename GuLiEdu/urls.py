@@ -16,6 +16,7 @@ Including another URLconf
 import xadmin
 from django.contrib import admin
 from django.urls import path, include
+from users import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
@@ -24,4 +25,5 @@ urlpatterns = [
     path('courses/', include('courses.urls')),
     path('orgs/', include('orgs.urls')),
     path('operations/', include('operations.urls')),
+    path('', views.index, name='index'),
 ]
